@@ -39,3 +39,9 @@ append(list, 5)
 append(list, 6)
 append(list, 7)
 
+
+cur = read_addr(list)
+while cur:
+    print(read(cur))
+    cur = read_addr(cur+1)
+
