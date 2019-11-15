@@ -1,7 +1,7 @@
 # algolearn - a 16-bit "learner computer" in Python 
 
-algolearn provides a very simple "learner computer" in Python to solve algorithmic challenges
-that has historically been taught in Pascal.
+algolearn provides a very simple "learner computer" in Python to solve foundational algorithmic challenges
+that has historically been taught in Pascal, C or even Basic.
 
 You write programs in Python and have access to a "VM" with 16 bit memory (64k in 64 byte pages).
 There are only limited instructions available and you need to learn about pointers. 
