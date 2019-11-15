@@ -3,13 +3,16 @@
 #
 #
 
+def list_init():
+    return malloc(2)
 
-def append(list, value):
+
+def list_append(l, v):
     node = malloc(3)
-    write(node, value)
-    first = read_addr(list)
+    write(node, v)
+    first = read_addr(l)
     if first == 0:
-        write_addr(list, node)
+        write_addr(l, node)
     else:
         cur = first
         while cur != 0:
@@ -18,30 +21,36 @@ def append(list, value):
         write_addr(prev+1, node)
 
 
-def len(list):
-    pass
-
-def remove(list):
-    pass
-
-def insert(list, pos, value):
-    pass
-
-def contains(list, value):
+def list_len(l):
     pass
 
 
-
-list = malloc(2)
-
-append(list, 4)
-append(list, 5)
-append(list, 6)
-append(list, 7)
+def list_remove(l):
+    pass
 
 
-cur = read_addr(list)
-while cur:
-    print(read(cur))
-    cur = read_addr(cur+1)
+def list_insert(l, pos, v):
+    pass
 
+
+def list_contains(l, v):
+    return False
+
+
+l = list_init()
+list_append(l, 4)
+list_append(l, 5)
+list_append(l, 64)
+list_append(l, 65)
+list_append(l, 128)
+list_append(l, 129)
+list_append(l, 3)
+list_append(l, 2)
+list_append(l, 1)
+list_append(l, 22)
+
+
+print(list_contains(l, 1))
+print(list_contains(l, 20))
+print(list_contains(l, 77))
+print(list_contains(l, 22))
