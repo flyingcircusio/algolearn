@@ -10,6 +10,11 @@ import struct
 #   * count_nonzero (page/allocation) cost o(1)
 #   * bitwise operations
 #
+# Debugging:
+#
+#   * readable memory dumps/tracing points during your app
+#   * "profiling" -> number of times an instruction was called
+#
 # Data structures:
 #
 #   structs
